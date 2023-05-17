@@ -76,3 +76,9 @@ C:\Users\ShivamArvindTivrekar\source\repos\FruitApi\FruitApi\obj\Debug\net7.0\Fr
 C:\Users\ShivamArvindTivrekar\source\repos\FruitApi\FruitApi\obj\Debug\net7.0\ref\FruitApi.dll
 C:\Users\ShivamArvindTivrekar\source\repos\FruitApi\FruitApi\bin\Debug\net7.0\AutoMapper.dll
 C:\Users\ShivamArvindTivrekar\source\repos\FruitApi\FruitApi\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\ShivamArvindTivrekar\source\repos\FruitApi\FruitApi\bin\Debug\net7.0\FluentValidation.dll
+C:\Users\ShivamArvindTivrekar\source\repos\FruitApi\FruitApi\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
+C:\Users\ShivamArvindTivrekar\source\repos\FruitApi\FruitApi\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\ShivamArvindTivrekar\source\repos\FruitApi\FruitApi\bin\Debug\net7.0\MediatR.dll
+C:\Users\ShivamArvindTivrekar\source\repos\FruitApi\FruitApi\bin\Debug\net7.0\MediatR.Contracts.dll
+C:\Users\ShivamArvindTivrekar\source\repos\FruitApi\FruitApi\bin\Debug\net7.0\MediatR.Extensions.Microsoft.DependencyInjection.dll

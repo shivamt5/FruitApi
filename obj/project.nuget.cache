@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MMbuCTm9ea2Zel7z+ze/L0/ZxQDQegxXFvZU0Fw9WHlGQSDOSlPb+lvCh8x2p9SgVsxwQ4hYLu3yiJF9/RLufQ==",
+  "dgSpecHash": "KoXjdBiNgK+Q7HiH33uI+4ywyW67p2WYnGLRKgPAmJxTtz9FWz8YDcBKucNRPewqXQH0D6dwjeaUHCG/QJHDnw==",
   "success": true,
   "projectFilePath": "C:\\Users\\ShivamArvindTivrekar\\source\\repos\\FruitApi\\FruitApi\\FruitApi.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,13 @@
     "C:\\Users\\ShivamArvindTivrekar\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\ShivamArvindTivrekar\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\ShivamArvindTivrekar\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\ShivamArvindTivrekar\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\ShivamArvindTivrekar\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\ShivamArvindTivrekar\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\ShivamArvindTivrekar\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\ShivamArvindTivrekar\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
+    "C:\\Users\\ShivamArvindTivrekar\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\ShivamArvindTivrekar\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "C:\\Users\\ShivamArvindTivrekar\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.4\\microsoft.aspnetcore.openapi.7.0.4.nupkg.sha512",
     "C:\\Users\\ShivamArvindTivrekar\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\ShivamArvindTivrekar\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

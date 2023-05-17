@@ -2,7 +2,11 @@ using FruitApi.Data;
 using FruitApi.Mappings;
 using FruitApi.Middleware;
 using FruitApi.Repositories;
+using MediatR;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +23,8 @@ options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectio
 builder.Services.AddScoped<IFruitRepository, FruitRepository>();
 
 builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
+
+builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
 
 var app = builder.Build();
 

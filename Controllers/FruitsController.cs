@@ -1,9 +1,12 @@
 ﻿using AutoMapper;
+using FruitApi.Commands;
 using FruitApi.CustomActionFilters;
 using FruitApi.Data;
 using FruitApi.Models.Domain;
 using FruitApi.Models.DTOs;
+using FruitApi.Queries;
 using FruitApi.Repositories;
+using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,21 +16,17 @@ namespace FruitApi.Controllers
     [ApiController]
     public class FruitsController : ControllerBase
     {
-        private readonly ApiDbContext _context;
-        private readonly IFruitRepository _fruitRepository;
-        private readonly IMapper _mapper;
-        public FruitsController(ApiDbContext context, IFruitRepository fruitRepository, IMapper mapper)
+        private readonly IMediator _mediator;
+        public FruitsController(IMediator mediator)
         {
-            _context = context;
-            _fruitRepository = fruitRepository;
-            _mapper = mapper;
+            _mediator = mediator;
         }
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var fruitsDomain = await _fruitRepository.GetAllAsync();
-
-            return Ok(_mapper.Map<List<FruitDto>>(fruitsDomain));
+            var query = new GetAllQuery();
+            var result = await _mediator.Send(query);
+            return Ok(result);
         }
 
         [HttpGet]
@@ -35,14 +34,9 @@ namespace FruitApi.Controllers
         [Route("{id:Guid}")]
         public async Task<IActionResult> GetById([FromRoute] Guid id)
         {
-            var fruitDomain = await _fruitRepository.GetByIdAsync(id);
-
-            if (fruitDomain == null)
-            {
-                return NotFound();
-            }
-
-            return Ok(_mapper.Map<FruitDto>(fruitDomain));
+            var query = new GetByIdQuery(id);
+            var result = await _mediator.Send(query);
+            return Ok(result);
         }
 
         [HttpGet]
@@ -50,41 +44,27 @@ namespace FruitApi.Controllers
         [ValidateModel]
         public async Task<IActionResult> GetByName([FromRoute] string name)
         {
-            var fruitDomain = await _fruitRepository.GetByNameAsync(name);
-
-            if (fruitDomain == null)
-            {
-                return NotFound();
-            }
-
-            return Ok(_mapper.Map<FruitDto>(fruitDomain));
+            var query = new GetByNameQuery(name);
+            var result = await _mediator.Send(query);
+            return Ok(result);
         }
 
         [HttpPost]
         [ValidateModel]
-        public async Task<IActionResult> Create([FromBody] AddFruitDto addFruitDto)
+        public async Task<IActionResult> Create([FromBody] CreateFruitCommand command)
         {
-            var fruitDomainModel = _mapper.Map<Fruit>(addFruitDto);
-
-            fruitDomainModel = await _fruitRepository.CreateAsync(fruitDomainModel);
-
-            var fruitDto = _mapper.Map<Fruit>(fruitDomainModel);
-
-            return CreatedAtAction(nameof(GetById), new { id = fruitDto.Id}, fruitDto);
+            var result = await _mediator.Send(command);
+            return CreatedAtAction(nameof(GetById), new { id = result.Id }, result);
         }
 
         [HttpDelete]
         [Route("{id:guid}")]
         public async Task<IActionResult> Delete([FromRoute] Guid id)
         {
-            var fruitDomainModel = await _fruitRepository.Deleteasync(id);
-
-            if (fruitDomainModel == null)
-            {
-                return NotFound();
-            }
-
-            return Ok(_mapper.Map<FruitDto>(fruitDomainModel));
+            var command = new DeleteFruitCommand(id);
+            var result = await _mediator.Send(command);
+            //var result = await _mediator.Send(id);
+            return Ok(result);
         }
     }
 }

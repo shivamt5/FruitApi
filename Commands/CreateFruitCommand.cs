@@ -1,9 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using FruitApi.Models.DTOs;
+using MediatR;
+using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 
-namespace FruitApi.Models.DTOs
+namespace FruitApi.Commands
 {
-    public class AddFruitDto
+    public class CreateFruitCommand : IRequest<FruitDto>
     {
         [Required]
         public string Name { get; set; }

@@ -25,7 +25,7 @@ namespace FruitApi.Repositories
         {
             var existingFruit = await _context.Fruits.FirstOrDefaultAsync(x => x.Id == id);
 
-            if (existingFruit == null)
+            if (existingFruit == null || existingFruit.isDeleted == true)
             {
                 return null;
             }
