@@ -63,7 +63,6 @@ namespace FruitApi.Controllers
         {
             var command = new DeleteFruitCommand(id);
             var result = await _mediator.Send(command);
-            //var result = await _mediator.Send(id);
             return Ok(result);
         }
     }
