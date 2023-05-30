@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Ur5jPBuEUuW9AGGct5doM0pY283P22/gE4Xo47FahK4jNBC4+MJqe8V4yLQ7oUT7BLvS+OMCcx5mnPJqMuc2Gg==",
+  "dgSpecHash": "9mO8arcLLcj3doRD0qkG7vHFq+JR0SL1GW151xsw4LZxCTZ32euxqy/b8hHTjsSIWHAYIjbN8GiitXS1vJ668g==",
   "success": true,
   "projectFilePath": "C:\\Users\\ShivamArvindTivrekar\\source\\repos\\FruitApi\\FruitApiTests\\FruitApiTests.csproj",
   "expectedPackageFiles": [
@@ -30,6 +30,7 @@
     "C:\\Users\\ShivamArvindTivrekar\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.5\\microsoft.entityframeworkcore.7.0.5.nupkg.sha512",
     "C:\\Users\\ShivamArvindTivrekar\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.5\\microsoft.entityframeworkcore.abstractions.7.0.5.nupkg.sha512",
     "C:\\Users\\ShivamArvindTivrekar\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.5\\microsoft.entityframeworkcore.analyzers.7.0.5.nupkg.sha512",
+    "C:\\Users\\ShivamArvindTivrekar\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\7.0.5\\microsoft.entityframeworkcore.inmemory.7.0.5.nupkg.sha512",
     "C:\\Users\\ShivamArvindTivrekar\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.5\\microsoft.entityframeworkcore.relational.7.0.5.nupkg.sha512",
     "C:\\Users\\ShivamArvindTivrekar\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.5\\microsoft.entityframeworkcore.sqlserver.7.0.5.nupkg.sha512",
     "C:\\Users\\ShivamArvindTivrekar\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
